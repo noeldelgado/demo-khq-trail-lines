@@ -1,0 +1,9 @@
+.TrailLines {
+  mask-size: var(--trail-lines-width, auto) var(--trail-lines-height, auto);
+  mask-position: top right;
+  mask-image: linear-gradient(-90deg, rgba(0, 0, 0, 1) 80%, transparent);
+
+  -webkit-mask-size: var(--trail-lines-width, auto) var(--trail-lines-height, auto);
+  -webkit-mask-position: top right;
+  -webkit-mask-image: linear-gradient(-90deg, rgba(0, 0, 0, 1) 80%, transparent);
+}
