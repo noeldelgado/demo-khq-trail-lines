@@ -13,10 +13,14 @@ function TrailLinesContainer({ hideBefore = 600}) {
 
   useEffect(() => {
     const mq = matchMedia(`(max-width: ${hideBefore}px)`);
-    mq.addEventListener('change', setHide);
+    if (mq?.addEventListener) mq.addEventListener('change', setHide);
+    else mq.addListener(setHide);
     setHide(() => ({ matches: window.innerWidth <= hideBefore }));
 
-    return () => mq.removeEventListener('change', setHide);
+    return () => {
+      if (mq?.removeEventListener) mq.removeEventListener('change', setHide);
+      else mq.removeListener(setHide);
+    }
   }, [hideBefore]);
 
   if (hide?.matches) return;
