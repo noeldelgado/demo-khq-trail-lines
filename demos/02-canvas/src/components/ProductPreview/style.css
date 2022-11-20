@@ -1,0 +1,39 @@
+.ProductPreview {
+  contain: layout;
+}
+
+.ProductPreview__glow {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 129.412%;
+  height: auto;
+  transform: translate(-11.36%, -15%);
+}
+
+.ProductPreview__glow-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.ProductPreview__cover {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background-image:
+    linear-gradient(#292a25, #292a25),
+    linear-gradient(rgba(73, 119, 255, 0.7), rgba(0, 255, 194, 0.7), rgba(255, 95, 227, 0.7));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 4px;
+  box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ProductPreview__cover-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

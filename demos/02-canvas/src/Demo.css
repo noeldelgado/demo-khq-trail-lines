@@ -1,0 +1,90 @@
+/*
+ * STYLES FOR DEMO PURPOSES ONLY
+ *
+ * - Intended to show the animation on context
+ * - It also shows a possible way to lay the top document gradients (#top and #customers sections)
+ */
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0px;
+  border-style: solid;
+  border-color: rgb(229, 231, 235);
+  margin: 0;
+  padding: 0;
+}
+
+#top {
+  background: linear-gradient(0deg, #35007F 0%, #4000BF 32.29%, #35007F 60.81%, #000000 93.75%);
+}
+
+#customers {
+  background-color: rgba(53, 0, 127, 1);
+  padding-bottom: 76px;
+}
+
+header {
+  height: 80px;
+  background-color: rgba(255 0 0 / 0);
+}
+
+p {
+  font-size: 12px;
+  line-height: 26px;
+  margin: 3.6em 0;
+}
+
+hgroup h1 {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 800;
+  margin: 0 0 .5em;
+}
+
+hgroup [role="doc-subtitle"] {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0 0 2.5em;
+}
+
+h2 {
+  font-weight: 500;
+  margin: 0 0 60px;
+  padding: 3rem 0 0;
+}
+
+ul[role="list"] {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+ul[role="list"] li {
+  min-width: 185px;
+}
+
+button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 12px 16px;
+  color: #4000BF;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+}
